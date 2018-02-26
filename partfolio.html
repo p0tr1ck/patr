@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick Simelane</title>
+    <meta name="author" content="Patrick Simelane">
+    <meta name="description" content="Patrick Simelane's personal portfolio page. Filled with projects for profit adn glory.">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <div class="toggle">
+            <i class="fas fa-bars" onclick="showNavOptions()"></i>
+          </div>
+          <ul id="Topnav" class="topnav">
+            <li onclick='scrollToThe("#header")'> HOME</a></li>
+            <li onclick='scrollToThe("#quote")'> <i class="fas fa-user"></i> QUOTE</a></li>
+            <li onclick='scrollToThe("#portfolio")'> <i class="fas fa-th-large"></i> PORTFOLIO</a></li>
+            <li onclick='scrollToThe("#contact")'> <i class="fas fa-envelope"></i> CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <br>
+
+    <div class="header" id="header">
+      <img src="images/patric.jpg" alt="profile picture" width= 300px>
+      <h1>Patrick Simelane</h1>
+      <p>Studied Web-development</p>
+    </div>
+  </header>
+
+<div id="quote">
+  <blockquote cite="https://medium.freecodecamp.org/9-months-into-a-software-engineering-role-this-is-what-i-learned-823230e4be9a/" >
+    <p>"two things are infinite: the universe and human stupidity; and I'm not sure about the universe"</p>
+    <p id="saidby">-Albert Einstein</p>
+  </blockquote>
+</div>
+<br>
+
+
+    <main id="portfolio">
+      <h2>Portfolio</h2>
+      <br>
+      <div class="wrapper">
+
+        <figure class="project">
+          <img src="computer.jpg" alt="google">
+          <figcaption>
+            <p class="heading">google</p>
+            <p class="name">A Search Engine inspire by backlinks. Its come a long way since 1998.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="images/youtube.jpg" alt="youtube" width=200px>
+          <figcaption>
+            <p class="heading">YouTube</p>
+            <p class="name">A video streaming Service.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="images/facebook.jpg" alt="brilliant" width= 200px>
+          <figcaption>
+            <p class="heading">facebook</p>
+            <p class="name">A great way to make people communicate in real time and veiw other people opinions!</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="images/etoro.jpg" alt="etoro" width=200px>
+          <figcaption>
+            <p class="heading">eToro</p>
+            <p class="name">A social Trading platform, not so great for techicals but great for choice.</p></figcaption>
+        </figure>
+
+        <figure class="project">
+          <img src="images/wiki.jpg" alt="wikipedia" width=200px>
+          <figcaption>
+            <p class="heading">Wikipedia</p>
+            <p class="name">infomation about almost everything.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="project">
+
+          <figcaption>
+            <p class="heading">instergram</p>
+            <p class="name">A good platform for showing pitures and event that took place.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </main>
+
+    <br><br>
+    <h2>Contact</h2>
+    <div id="contact" class="contact-grid">
+
+
+  <div class="container">
+    <form action="#">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">South Africa</option>
+              <option value="canada">'America</option>
+              <option value="usa">Somewhere else</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.8098698933104!2d28.012099315024717!3d-25.94146698355556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9579efa9aefb0d%3A0x13b742e283a157d!2seHUB+Diepsloot!5e0!3m2!1sen!2sza!4v1519331442939" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#Quote">Quote</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      Copyright (c) 2018 Copyright Holder All Rights Reserved.
+    </footer>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>
